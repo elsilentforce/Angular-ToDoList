@@ -1,0 +1,25 @@
+<section>
+	<ul class="nav nav-pills">
+		<li ng-class="{active:tab.isSelected(1)}">
+			<a href ng-click="tab.selectTab(1)">Lista de Tareas</a>
+		</li>
+		<li ng-class="{active:tab.isSelected(2)}">
+			<a href ng-click="tab.selectTab(2)">Tareas Finalizadas</a>
+		</li>
+		<li ng-class="{active:tab.isSelected(3)}">
+			<a href ng-click="tab.selectTab(3)">Ingresar Tarea</a>
+		</li>
+	</ul>
+	<!-- Tab Lista de tareas -->
+	<div class="panel" ng-show="tab.isSelected(1)">
+		<task-list></task-list>
+	</div>
+	<!-- Tab Tareas Finalizadas -->
+	<div class="panel" ng-show="tab.isSelected(2)">
+		<task-finished></task-finished>
+	</div>
+	<!-- Tab Crear Tarea -->
+	<div class="panel" ng-show="tab.isSelected(3)">
+		<task-create></task-create>
+	</div>
+</section>

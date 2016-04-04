@@ -1,0 +1,29 @@
+<form name="taskForm" ng-submit="taskForm.$valid && taskCtrl.addTask()" novalidate>
+	<table>
+		<th><h2>Ingresar Tarea</h2></th>
+		<!-- Nombre de la Tarea -->
+		<tr>
+			<td class="col-xs-3">
+				<fieldset class="form-group">
+					<label for="taskName">Nombre de la Tarea</label>
+					<input class="form-control" id="taskName" ng-model="taskCtrl.task.name" required></input>
+				</fieldset>
+			</td>
+		</tr>
+		<!-- Descripción de la Tarea -->
+		<tr>
+			<td class="col-xs-3">
+				<fieldset class="form-group">
+					<label for="taskDescription">Descripción</label>
+					<textarea class="form-control" id="taskDescription" ng-model="taskCtrl.task.description" required></textarea>
+				</fieldset>
+			</td>
+		</tr>
+		<!-- Botón de envío -->
+		<tr>
+			<td class=col-xs-3>
+				<input type="submit" value="Ingresar Tarea" class="pull-right btn btn-primary"></input>	
+			</td>
+		</tr>
+	</table>
+</form>

@@ -1,0 +1,4 @@
+<div class="list-group-item" ng-repeat="task in task.tasks" ng-hide="task.done">	
+	<strong>{{ task.name }}:</strong> {{ task.description }}
+	<input class="pull-right" type="checkbox" ng-model="task.done"></input>
+</div>

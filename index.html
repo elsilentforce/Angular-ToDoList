@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="toDoList">
+<head>
+	<title>AngularJS To Do List</title>
+	<meta charset="utf-8" />
+	<script type="text/javascript" src="assets/javascript/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/javascript/angular.min.js"></script>
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
+	<script type="text/javascript" src="assets/javascript/tasks.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/customStyle.css">
+</head>
+<body>
+	<h1 class="text-center">Lista de Tareas</h1>
+	<div class="container" ng-controller="TaskController as task">
+		<!-- Panel de opciones -->
+		<task-panel></task-panel>
+		<!-- Lista de tareas -->
+		
+	</div>
+</body>
+</html>
